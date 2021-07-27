@@ -7,7 +7,10 @@
               <a class="mr-2" href="#">{{ post.author }}</a>
               <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
             </div>
-            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+          <!-- we're creating a url route for when user clicks blog link using post.id -->
+          <!-- so 'post-detail' refers to the url that has the name='post-detail' in the URL pattern file -->
+          <!-- post.id is the <int:pk> (primary key of the post in our database)-->
+            <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.content }}</p>
           </div>
         </article>
