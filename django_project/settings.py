@@ -27,7 +27,7 @@ DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['https://django-blog-demo-c15.herokuapp.com/']
+ALLOWED_HOSTS = ['django-blog-demo-c15.herokuapp.com']
 
 
 # Application definition
